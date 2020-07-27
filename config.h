@@ -9,7 +9,7 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { 
-	"Hack Nerd Font:size=10"
+	"Hack Nerd Font:size=11"
 };
 static const char dmenufont[]       = "Hack Nerd Font:size=12";
 static const char col_gray1[]       = "#222222";
@@ -103,9 +103,9 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 
-    { 0,    XF86XK_AudioLowerVolume,    spawn,  SHCMD("pactl set-sink-volume 0 -5%") },
-    { 0,    XF86XK_AudioMute,           spawn,  SHCMD("pactl set-sink-mute 0 toggle") },
-    { 0,    XF86XK_AudioRaiseVolume,    spawn,  SHCMD("pactl set-sink-volume 0 +5%") },
+    { 0,    XF86XK_AudioLowerVolume,    spawn,  SHCMD("pactl set-sink-volume 0 -5% && pkill -RTMIN+10 dwmblocks") },
+    { 0,    XF86XK_AudioMute,           spawn,  SHCMD("pactl set-sink-mute 0 toggle && pkill -RTMIN+10 dwmblocks") },
+    { 0,    XF86XK_AudioRaiseVolume,    spawn,  SHCMD("pactl set-sink-volume 0 +5% && pkill -RTMIN+10 dwmblocks") },
     { 0,    XF86XK_MonBrightnessUp,     spawn,  SHCMD("xbacklight -inc 5") }, 
     { 0,    XF86XK_MonBrightnessDown,   spawn,  SHCMD("xbacklight -dec 5") },
 };
