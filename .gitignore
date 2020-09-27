@@ -1,4 +1,4 @@
 config.h
 **/*.o
 dwm
-patches/dwm-actualfullscreen-20191112-cb3f58a.diff
+patches/
