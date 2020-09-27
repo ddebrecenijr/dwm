@@ -18,6 +18,17 @@ static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+    [SchemeStatus] = { "#f8f8f2", "#282a36", "#000000" },
+    [SchemeTagsSel] = { "#44475a", "#bd93f9", "#000000" },
+    [SchemeTagsNorm] = { "#f8f8f2", "#282a36", "#000000" },
+    [SchemeInfoSel] = { "#44475a", "#bd93f9", "#000000" },
+    [SchemeInfoNorm] = { "#f8f8f2", "#282a36", "#000000" },
+
+//    [SchemeStatus] = { "#3b4252", "#81a1c1", "#000000" },
+//    [SchemeTagsSel] = { "#d8dee9", "#5e81ac", "#000000" },
+//    [SchemeTagsNorm] = { "#3b4252", "#81a1c1", "#000000" },
+//    [SchemeInfoSel] = { "#d8dee9", "#5e81ac", "#000000" },
+//    [SchemeInfoNorm] = { "#3b4252", "#81a1c1", "#000000" },
 };
 
 /* tagging */
